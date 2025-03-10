@@ -1,0 +1,18 @@
+{
+  "name": "bin",
+  "version": "1.0.0",
+  "main": "./author.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "commander": "^13.1.0"
+  }
+}
