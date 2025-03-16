@@ -1,6 +1,7 @@
 const { program } = require('commander');
 const { countLOC } = require('../lib/locCounter');
 const { analyzeStructure } = require('../lib/structureAnalyzer');
+const { countComments } = require('../lib/commentCounter');
 
 program
   .version('1.0.0')
@@ -10,6 +11,9 @@ program
   })
   .option('--analyze <path>', 'Conta funções e classes em um arquivo', (path) => {
     console.log(analyzeStructure(path));
+  })
+  .option('--comments <path>', 'Conta o número de linhas de comentários em um arquivo', (path) => {
+    console.log(countComments(path));
   })
   .parse(process.argv);
 
