@@ -21,17 +21,17 @@ cli --help
 
 ### 📌 Contar linhas de código:
 ```sh
-cli --loc caminho/do/arquivo_ou_diretorio
+cli --loc caminho do arquivo
 ```
 
 ### 📌 Contar funções e classes:
 ```sh
-cli --analyze caminho/do/arquivo.js
+cli --analyze caminho do arquivo
 ```
 
 ### 📌 Contar linhas de comentário:
 ```sh
-cli --comments caminho/do/arquivo.js
+cli --comments caminho do arquivo
 ```
 
 ## 🛠️ Testes
