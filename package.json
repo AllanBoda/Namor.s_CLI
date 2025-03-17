@@ -1,14 +1,16 @@
 {
-  "name": "bin",
+  "name": "pac-cli",
   "version": "1.0.0",
-  "main": "./author.js",
+  "bin": {
+    "cli": "./bin/cli.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Ferramenta CLI para análise de código",
   "devDependencies": {
     "jest": "^29.7.0"
   },

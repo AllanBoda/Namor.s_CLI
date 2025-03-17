@@ -15,6 +15,8 @@ program
   .option('--comments <path>', 'Conta o número de linhas de comentários em um arquivo', (path) => {
     console.log(countComments(path));
   })
+  .option('--help',
+    console.log('loc - Conta as linhas de código de um arquivo ou diretório \nanalyze - Conta funções e classes em um arquivo\ncomments - Conta o número de linhas de comentários em um arquivo'))
   .parse(process.argv);
 
 if (!process.argv.slice(2).length) {
