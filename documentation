@@ -1,87 +1,72 @@
-# Documentação do CLI
+Namor CLI - Documentação Oficial
 
-## Visão Geral
+✨ Visão Geral
 
-Este projeto é um CLI (Command Line Interface) desenvolvido em Node.js com Jest para testes unitários. Ele permite realizar análises em código-fonte, como contagem de linhas de código, número de funções e classes, e outras métricas relevantes para análise de qualidade.
+Namor CLI é uma ferramenta de linha de comando (CLI) desenvolvida em Node.js, projetada para realizar diversas análises em código-fonte.
+Entre suas funcionalidades, destacam-se:
 
-## Instalação
+✔️ Contagem de Linhas de Código (LOC);
 
-Para instalar o CLI, utilize o seguinte comando:
+✔️ Contagem de Funções e Classes;
 
-sh
-npm install -g namor-cli
+✔️ Análise Assintótica de Funções.
 
+O projeto também conta com testes unitários e integração com CI/CD, garantindo qualidade e confiabilidade nas análises realizadas.
 
-## Uso
+🔧 Instalação
 
-Após a instalação, o CLI pode ser executado com os seguintes comandos:
+Para instalar o Namor CLI globalmente, utilize o seguinte comando:
 
-### Exibir ajuda
+🛠️ Uso
 
-sh
-namor-cli --help
+❓ Exibir ajuda
 
+Para visualizar todos os comandos disponíveis:
 
-### Analisar um arquivo ou diretório
+📈 Analisar um arquivo ou diretório
 
-sh
-namor-cli analyze <caminho>
-
+Para realizar uma análise em um arquivo ou diretório:
 
 Exemplo:
 
-sh
-namor-cli analyze src/
+🌐 Arquitetura do Projeto
 
+A estrutura de diretórios do projeto está organizada da seguinte forma:
 
-## Arquitetura
+📝 Funcionalidades Implementadas
 
-O projeto está organizado nos seguintes diretórios:
+📅 Contagem de Linhas de Código (LOC)
 
-- bin/ - Contém o arquivo principal cli.js, responsável por interpretar os comandos do usuário.
-- lib/ - Contém os módulos de análise, como locCounter.js (contagem de linhas de código), structureAnalyzer.js (análise da estrutura do código) e complexityAnalyzer.js (análise assintótica das funções).
-- tests/ - Contém os testes unitários para cada funcionalidade do CLI.
+O módulo locCounter.js realiza a contagem de linhas de código e linhas de comentários.
 
-## Funcionalidades Implementadas
+👨‍💻 Contagem de Funções e Classes
 
-### Contagem de Linhas de Código (LOC)
+O módulo structureAnalyzer.js analisa o código-fonte para contar a quantidade de funções e classes definidas.
 
-O módulo lib/locCounter.js realiza a contagem de linhas de código e comentários.
+⚖️ Análise Assintótica das Funções
 
-### Contagem de Funções e Classes
+O módulo complexityAnalyzer.js examina loops e estrutura de código para estimar sua eficiência assintótica.
 
-O módulo lib/structureAnalyzer.js analisa o código-fonte e conta a quantidade de funções e classes definidas.
+💡 Testes Unitários
 
-### Análise Assintótica das Funções
-
-O módulo lib/complexityAnalyzer.js estima a complexidade assintótica das funções no código-fonte, identificando loops e estrutura do código para indicar sua eficiência.
-
-### Identificação de Código Duplicado
-
-O módulo lib/duplicateCodeAnalyzer.js verifica a presença de trechos de código repetidos, ajudando na melhoria da manutenibilidade do projeto.
-
-### Predição de Bugs com IA
-
-Integração com modelos de IA que analisam trechos de código e sugerem melhorias, indicando potenciais problemas que podem gerar falhas no sistema.
-
-## Testes Unitários
-
-Os testes são escritos utilizando Jest. Para executar os testes, utilize o seguinte comando:
-
-sh
-npm test
-
+Os testes foram escritos utilizando Jest. Para executá-los, utilize o seguinte comando:
 
 Os arquivos de teste estão localizados na pasta tests/ e cobrem as funcionalidades principais do CLI.
 
-## Integração com CI/CD
+🛠️ Integração com CI/CD
 
-Para garantir a qualidade contínua do projeto, foi implementado um pipeline no GitHub Actions para executar os testes automaticamente a cada commit e verificar a cobertura de código.
+O projeto conta com um pipeline automatizado no GitHub Actions para:
 
-## Conclusão
+Executar testes unitários automaticamente a cada commit;
 
-O projeto foi desenvolvido considerando as avaliações passadas pelo professor, atendendo aos critérios de funcionalidade, qualidade do código e documentação. O CLI agora suporta diversas análises de código essenciais para um desenvolvimento eficiente e sustentável.
+Verificar a cobertura de código;
 
----
+Garantir a qualidade contínua do projeto.
 
-Essa documentação será mantida atualizada conforme novas funcionalidades forem adicionadas ao CLI.
+🎡 Conclusão
+
+O Namor CLI foi desenvolvido seguindo boas práticas de qualidade e documentação. Futuras atualizações incluirão novas métricas de análise e melhorias na precisão dos relatórios.
+
+Caso tenha sugestões ou encontre bugs, contribua abrindo uma issue ou enviando um pull request!
+
+📚 Desenvolvido com Node.js, Jest e GitHub Actions.
