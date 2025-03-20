@@ -1,4 +1,4 @@
-# Documentação do CLI
+# Documentação do Namor's CLI
 
 ## Visão Geral
 
@@ -56,14 +56,6 @@ O módulo lib/structureAnalyzer.js analisa o código-fonte e conta a quantidade 
 
 O módulo lib/complexityAnalyzer.js estima a complexidade assintótica das funções no código-fonte, identificando loops e estrutura do código para indicar sua eficiência.
 
-### Identificação de Código Duplicado
-
-O módulo lib/duplicateCodeAnalyzer.js verifica a presença de trechos de código repetidos, ajudando na melhoria da manutenibilidade do projeto.
-
-### Predição de Bugs com IA
-
-Integração com modelos de IA que analisam trechos de código e sugerem melhorias, indicando potenciais problemas que podem gerar falhas no sistema.
-
 ## Testes Unitários
 
 Os testes são escritos utilizando Jest. Para executar os testes, utilize o seguinte comando:
@@ -76,7 +68,7 @@ Os arquivos de teste estão localizados na pasta tests/ e cobrem as funcionalida
 
 ## Integração com CI/CD
 
-Para garantir a qualidade contínua do projeto, foi implementado um pipeline no GitHub Actions para executar os testes automaticamente a cada commit e verificar a cobertura de código.
+Para garantir a qualidade contínua do projeto, será implementado um pipeline no GitHub Actions para executar os testes automaticamente a cada commit e verificar a cobertura de código.
 
 ## Conclusão
 
