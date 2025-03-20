@@ -5,7 +5,7 @@ const { countComments } = require('../lib/commentCounter');
 
 program
   .version('1.0.0')
-  .description('Ferramenta CLI para análise de código')
+  .description('Ferramenta Namor's ClI para análise de código')
   .option('--loc <path>', 'Conta as linhas de código de um arquivo ou diretório', (path) => {
     console.log(countLOC(path));
   })
