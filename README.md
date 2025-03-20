@@ -1,62 +1,87 @@
-# CLI de Análise de Código
+# Documentação do CLI
 
-## 📌 Sobre
-Esta ferramenta CLI permite analisar arquivos e diretórios de código-fonte, fornecendo métricas como:
-- **Contagem de Linhas de Código (LOC)**
-- **Contagem de Funções e Classes**
-- **Contagem de Linhas de Comentário**
+## Visão Geral
 
-## 🚀 Instalação
-Para instalar globalmente, execute:
-```sh
-npm install -g ./
-```
-Isso permitirá que você use o comando `cli` em qualquer lugar do sistema.
+Este projeto é um CLI (Command Line Interface) desenvolvido em Node.js com Jest para testes unitários. Ele permite realizar análises em código-fonte, como contagem de linhas de código, número de funções e classes, e outras métricas relevantes para análise de qualidade.
 
-## 📖 Uso
-### 📌 Exibir ajuda:
-```sh
-cli --help
-```
+## Instalação
 
-### 📌 Contar linhas de código:
-```sh
-cli --loc caminho do arquivo
-```
+Para instalar o CLI, utilize o seguinte comando:
 
-### 📌 Contar funções e classes:
-```sh
-cli --analyze caminho do arquivo
-```
+sh
+npm install -g namor-cli
 
-### 📌 Contar linhas de comentário:
-```sh
-cli --comments caminho do arquivo
-```
 
-## 🛠️ Testes
-Para rodar os testes automatizados:
-```sh
-npx jest
-```
+## Uso
 
-## 🏗️ Arquitetura do Projeto
-O projeto está estruturado da seguinte forma:
-```
-📂 projeto-cli
-│-- 📂 bin
-│   ├── cli.js  # Arquivo principal da CLI
-│-- 📂 lib
-│   ├── locCounter.js  # Contagem de linhas de código
-│   ├── structureAnalyzer.js  # Análise de funções e classes
-│   ├── commentCounter.js  # Contagem de comentários
-│-- 📂 tests
-│   ├── locCounter.test.js  # Testes para contagem de linhas
-│   ├── structureAnalyzer.test.js  # Testes para funções/classes
-│   ├── commentCounter.test.js  # Testes para comentários
-│-- package.json  # Configuração do projeto
-│-- README.md  # Documentação
-```
+Após a instalação, o CLI pode ser executado com os seguintes comandos:
 
-## 📜 Licença
-Projeto open-source sob a licença MIT.
+### Exibir ajuda
+
+sh
+namor-cli --help
+
+
+### Analisar um arquivo ou diretório
+
+sh
+namor-cli analyze <caminho>
+
+
+Exemplo:
+
+sh
+namor-cli analyze src/
+
+
+## Arquitetura
+
+O projeto está organizado nos seguintes diretórios:
+
+- bin/ - Contém o arquivo principal cli.js, responsável por interpretar os comandos do usuário.
+- lib/ - Contém os módulos de análise, como locCounter.js (contagem de linhas de código), structureAnalyzer.js (análise da estrutura do código) e complexityAnalyzer.js (análise assintótica das funções).
+- tests/ - Contém os testes unitários para cada funcionalidade do CLI.
+
+## Funcionalidades Implementadas
+
+### Contagem de Linhas de Código (LOC)
+
+O módulo lib/locCounter.js realiza a contagem de linhas de código e comentários.
+
+### Contagem de Funções e Classes
+
+O módulo lib/structureAnalyzer.js analisa o código-fonte e conta a quantidade de funções e classes definidas.
+
+### Análise Assintótica das Funções
+
+O módulo lib/complexityAnalyzer.js estima a complexidade assintótica das funções no código-fonte, identificando loops e estrutura do código para indicar sua eficiência.
+
+### Identificação de Código Duplicado
+
+O módulo lib/duplicateCodeAnalyzer.js verifica a presença de trechos de código repetidos, ajudando na melhoria da manutenibilidade do projeto.
+
+### Predição de Bugs com IA
+
+Integração com modelos de IA que analisam trechos de código e sugerem melhorias, indicando potenciais problemas que podem gerar falhas no sistema.
+
+## Testes Unitários
+
+Os testes são escritos utilizando Jest. Para executar os testes, utilize o seguinte comando:
+
+sh
+npm test
+
+
+Os arquivos de teste estão localizados na pasta tests/ e cobrem as funcionalidades principais do CLI.
+
+## Integração com CI/CD
+
+Para garantir a qualidade contínua do projeto, foi implementado um pipeline no GitHub Actions para executar os testes automaticamente a cada commit e verificar a cobertura de código.
+
+## Conclusão
+
+O projeto foi desenvolvido considerando as avaliações passadas pelo professor, atendendo aos critérios de funcionalidade, qualidade do código e documentação. O CLI agora suporta diversas análises de código essenciais para um desenvolvimento eficiente e sustentável.
+
+---
+
+Essa documentação será mantida atualizada conforme novas funcionalidades forem adicionadas ao CLI.
