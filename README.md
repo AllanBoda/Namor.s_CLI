@@ -98,12 +98,11 @@ O módulo lib/methodVisibilityAnalyzer.js percorre a estrutura do código para i
 
 Os testes são escritos utilizando Jest. Para executar os testes, utilize o seguinte comando:
 
-sh
-npm test
+ - npm test
 
 ou
 
-npx jest tests/<TítuloDoCódigo>.test.js
+ - npx jest tests/<TítuloDoCódigo>.test.js
 
 Os arquivos de teste estão localizados na pasta tests/ e cobrem as funcionalidades principais do CLI, incluindo casos de sucesso e falha.
 
