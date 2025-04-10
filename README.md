@@ -26,12 +26,19 @@ node ./bin/cli.js --help <caminho>
 
 sh
 node ./bin/cli.js --loc <caminho>
+
 node ./bin/cli.js --analyze <caminho>
+
 node ./bin/cli.js --comments <caminho>
+
 node ./bin/cli.js --indentation <caminho>
+
 node ./bin/cli.js --deps <caminho>
+
 node ./bin/cli.js --ratio <caminho>
+
 node ./bin/cli.js --visibility <caminho>
+
 
 
 Exemplo:
