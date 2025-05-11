@@ -1,56 +1,82 @@
-"""# 🧠 Namor's CLI – Analisador de Código JS
+# Namor's CLI - Ferramenta de Análise de Código
 
-![Node.js](https://img.shields.io/badge/Node.js-CLI-brightgreen)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Tests](https://img.shields.io/badge/tests-Jest%20passing-brightgreen)
+Bem-vindo ao **Namor's CLI**, uma ferramenta de linha de comando desenvolvida para análise estática de código JavaScript. Este projeto permite que desenvolvedores avaliem métricas como linhas de código, estrutura do código, comentários, indentação, dependências e visibilidade de métodos, fornecendo insights valiosos para melhorar a qualidade do código.
 
-> Uma poderosa ferramenta de linha de comando (CLI) para análise de métricas de qualidade em código JavaScript.
+## Sobre o Projeto
+O Namor's CLI é uma ferramenta modular que processa arquivos ou diretórios JavaScript, gerando relatórios detalhados sobre:
+- Contagem de linhas de código (LOC).
+- Análise de funções e classes.
+- Contagem de comentários e proporção comentário/código.
+- Níveis de indentação.
+- Dependências externas e locais.
+- Visibilidade de métodos em classes (públicos e privados).
 
----
+O projeto foi desenvolvido com Node.js e utiliza bibliotecas como `commander` para interface CLI e `esprima` para análise de código.
 
-## 📑 Índice
+## Pré-requisitos
+- **Node.js** (versão 14 ou superior)
+- **npm** (geralmente incluído com o Node.js)
 
-- [Sobre o Projeto](#sobre-o-projeto)
-- [Funcionalidades](#funcionalidades)
-- [Demonstração](#demonstração)
-- [Instalação](#instalação)
-- [Como Usar](#como-usar)
-- [Arquitetura do Projeto](#arquitetura-do-projeto)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Contribuidores](#contribuidores)
-- [Licença](#licença)
-- [Referências](#referências)
+## Instalação
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/namors-cli.git
+   ```
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd namors-cli
+   ```
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
+4. (Opcional) Vincule o CLI globalmente para uso em qualquer diretório:
+   ```bash
+   npm link
+   ```
 
----
-
-## 📌 Sobre o Projeto
-
-O **Namor's CLI** é uma ferramenta de linha de comando feita em **Node.js** que permite realizar diversas análises estáticas em arquivos JavaScript. Ele fornece métricas como:
-- Contagem de linhas de código (LOC)
-- Densidade de comentários
-- Identação
-- Visibilidade de métodos
-- Estrutura de classes e funções
-- Dependências internas
-- Relação entre código e comentários
-
----
-
-## 🚀 Funcionalidades
-
-- 📏 `--loc`: Contador de linhas de código
-- 💬 `--comments`: Contador de comentários
-- 📐 `--indentation`: Verificador de identação
-- 📊 `--ratio`: Relação comentários/código
-- 🧱 `--structure`: Estrutura de classes e funções
-- 🔍 `--visibility`: Visibilidade de métodos
-- 🔗 `--deps`: Dependências internas do código
-- 🤖 `--analyze`: Roda todas as análises acima
-
----
-
-## 🎥 Demonstração
+## Como Usar
+Execute o comando `node cli.js` seguido de uma das opções disponíveis. Use `--help` para ver todas as opções:
 
 ```bash
-# Exemplo de uso:
-node ./bin/cli.js --analyze ./exemplo
+node cli.js --help
+```
+
+### Exemplos
+- Contar linhas de código em um arquivo:
+  ```bash
+  node cli.js --loc caminho/para/arquivo.js
+  ```
+- Analisar funções e classes:
+  ```bash
+  node cli.js --analyze caminho/para/arquivo.js
+  ```
+- Calcular proporção de comentários:
+  ```bash
+  node cli.js --ratio caminho/para/arquivo.js
+  ```
+
+## Opções Disponíveis
+| Opção            | Descrição                                              |
+|------------------|--------------------------------------------------------|
+| `--loc <path>`   | Conta as linhas de código de um arquivo ou diretório.   |
+| `--analyze <path>` | Conta funções e classes em um arquivo.               |
+| `--comments <path>` | Conta linhas de comentários.                         |
+| `--indent <path>` | Analisa níveis de indentação.                         |
+| `--deps <path>`   | Analisa dependências do arquivo.                      |
+| `--ratio <path>`  | Calcula proporção de comentários em relação ao código. |
+| `--visibility <path>` | Conta métodos públicos e privados de classes.      |
+
+## Contribuindo
+Contribuições são bem-vindas! Para contribuir:
+1. Faça um fork do repositório.
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-funcionalidade`).
+3. Commit suas alterações (`git commit -m 'Adiciona nova funcionalidade'`).
+4. Envie para o repositório remoto (`git push origin feature/nova-funcionalidade`).
+5. Abra um Pull Request.
+
+## Licença
+Este projeto está licenciado sob a [MIT License](LICENSE).
+
+## Contato
+Para dúvidas ou sugestões, entre em contato pelo e-mail: seu.email@example.com.
