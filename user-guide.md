@@ -11,7 +11,7 @@ Sistema operacional: Windows, macOS ou Linux
 3. Instalação
 Siga estas etapas para instalar o Namor's CLI:
 
-Clone o repositório:git clone https://github.com/seu-usuario/namors-cli.git
+Clone o repositório:git clone [https://github.com/seu-usuario/namors-cli.git](https://github.com/AllanBoda/Namor.s_CLI)
 
 
 Navegue até o diretório do projeto:cd namors-cli
