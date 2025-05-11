@@ -79,4 +79,7 @@ Contribuições são bem-vindas! Para contribuir:
 Este projeto está licenciado sob a [MIT License](LICENSE).
 
 ## Contato
-Para dúvidas ou sugestões, entre em contato pelo e-mail: seu.email@example.com.
+Para dúvidas ou sugestões, entre em contato pelo e-mail: ldgdanielgomes@gmail.com.
+
+## Guia de Uso
+Veja o [Manual do Usuário](user-guide.md) para instruções detalhadas sobre como usar o Namor's CLI.
