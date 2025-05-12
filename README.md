@@ -76,7 +76,7 @@ Contribuições são bem-vindas! Para contribuir:
 5. Abra um Pull Request.
 
 ## Licença
-Este projeto está licenciado sob a [MIT License](LICENSE).
+Este projeto está licenciado sob a [MIT License](https://github.com/AllanBoda/Namor.s_CLI/blob/master/LICENSE.txt).
 
 ## Contato
 Para dúvidas ou sugestões, entre em contato pelo e-mail: ldgdanielgomes@gmail.com.
