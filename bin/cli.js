@@ -1,11 +1,11 @@
 const { program } = require('commander');
-const { countLOC } = require('../lib/locCounter');
-const { analyzeStructure } = require('../lib/structureAnalyzer');
-const { countComments } = require('../lib/commentCounter');
-const { analyzeIndentation } = require('../lib/indentationAnalyzer');
-const { analyzeDependencies } = require('../lib/dependencyAnalyzer');
-const { calculateCommentRatio } = require('../lib/commentRatio');
-const { analyzeMethodVisibility } = require('../lib/methodVisibilityAnalyzer');
+const { countLOC } = require('../src/analisadores/locCounter');
+const { analyzeStructure } = require('../src/analisadores/structureAnalyzer');
+const { countComments } = require('../src/analisadores/commentCounter');
+const { analyzeIndentation } = require('../src/analisadores/indentationAnalyzer');
+const { analyzeDependencies } = require('../src/analisadores/dependencyAnalyzer');
+const { calculateCommentRatio } = require('../src/analisadores/commentRatio');
+const { analyzeMethodVisibility } = require('../src/analisadores/methodVisibilityAnalyzer');
 
 // Função para formatar objetos como texto legível
 function formatTextOutput(obj, indent = 0) {
